@@ -37,7 +37,7 @@ The react [index.js](src/main/react/src/index.js) file needs to be updated too. 
 
 In all components that will have translations, you have to change how they are exported. It should look something like: `export default translate("view", { wait: true })(App)`
 
-The translations live in the [js](src/main/webapp/js/) folder based on locale. Since we only have one (namespace)[https://www.i18next.com/principles/namespaces.html], we just have a view.json file in each folder.
+The translations live in the [js](src/main/webapp/js/) folder based on locale. Since we only have one [namespace](https://www.i18next.com/principles/namespaces.html), we just have a view.json file in each folder.
 
 ## Building the project.
 You do not need to build the react side of the project by its self. The maven process will build and copy the generated artifacts to the correct location for you. But if you wish to build the react project by hand, go to the src/main/react/ directory and do either a `npm run build` or a `yarn run build`.
